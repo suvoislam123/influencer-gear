@@ -12,6 +12,10 @@ body {
 
 }
 
+.btn-color {
+    color: var(--btn-bg-color);
+}
+
 /* header Starts Here */
 #mobile-menu {
     font-size: 40px;
@@ -73,6 +77,7 @@ nav h2 {
     font-size: 3em;
 
 }
+
 
 .info {
     width: 40%;
@@ -188,7 +193,7 @@ span {
     height: 426px;
     width: 329px;
     line-height: 0.3em;
-    box-shadow: 7px 5px 5px -1px black;
+    box-shadow: 3px 3px 15px black;
     box-sizing: border-box;
     border-radius: 10px;
 
@@ -257,7 +262,7 @@ span {
 
 .info-card-icon i {
     font-size: 4em;
-    color: #3A3A3A;
+    color: rgb(105, 154, 173);
     text-align: center;
 
 
@@ -288,14 +293,14 @@ footer a i {
 @media only screen and (max-width:688px) {
 
 
-    nav {
+    .menu-items {
         display: none;
     }
 
     #mobile-menu {
         display: block;
         position: absolute;
-        top: .1em;
+        top: .7em;
         left: .4em;
     }
 
@@ -303,8 +308,8 @@ footer a i {
         font-size: 40px;
         display: block;
         position: absolute;
-        top: .1em;
-        right: .3em;
+        top: .4em;
+        right: .2em;
 
     }
 
@@ -398,23 +403,24 @@ footer a i {
 /* tablet devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
 
-    nav {
+
+    .menu-items {
         display: none;
     }
 
     #mobile-menu {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: .7em;
+        left: .4em;
     }
 
     #cart-icon {
         font-size: 40px;
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: .4em;
+        right: .2em;
 
     }
 
