@@ -35,6 +35,10 @@ nav {
 
 }
 
+nav h2 {
+    font-size: 2em;
+}
+
 .menu-items {
     display: flex;
     list-style-type: none;
@@ -51,6 +55,8 @@ nav {
 .menu-items a {
     text-decoration: none;
     color: #3A3A3A;
+    font-weight: 600;
+    font-size: 1.1em;
 
 }
 
@@ -61,6 +67,11 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 200px;
+}
+
+.section1 h1 {
+    font-size: 3em;
+
 }
 
 .info {
@@ -149,7 +160,9 @@ nav {
 .section3>h1 {
     text-align: center;
     margin-bottom: 3em;
-    margin-right: 3em;
+    margin-right: 2em;
+    font-weight: 700;
+    font-size: 1.5em;
 
 }
 
@@ -195,6 +208,61 @@ span {
     font-weight: 700;
     font-size: 16px;
 }
+
+/* ---------------------------------------------------------------------------
+--------------------------Section 5 starts Here ------------------------------*/
+.section5 {}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    height: 40px;
+    width: 40vw;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#search-btn {
+    height: 40px;
+    width: 60px;
+    color: var(--btn-color);
+    background-color: var(--btn-bg-color);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 2em;
+
+}
+
+
+.info-cards {
+    margin-top: 5em;
+    margin-left: 15vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 5vh;
+
+}
+
+.info-card {
+    width: 80%;
+    border-right: 2px solid gray;
+
+}
+
+.info-card-icon i {
+    font-size: 4em;
+    color: #3A3A3A;
+    text-align: center;
+
+
+}
+
 
 /* footer style starts here */
 footer {
@@ -316,6 +384,15 @@ footer a i {
         margin-left: 60%;
     }
 
+    .info-cards {
+        margin-top: 5em;
+        margin-left: 15vw;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
 }
 
 /* tablet devices */
@@ -421,6 +498,12 @@ footer a i {
 
     .see-more-div {
         margin-left: 80%;
+    }
+
+    .info-cards {
+
+        grid-template-columns: repeat(3, 1fr);
+
     }
 
 
