@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-:root {
-    --btn-color: #FFFFFF;
-    --btn-bg-color: #E02C6D;
-    --text-primary-color: #3A3A3A;
-}
-
+/*---------------------------------------------------------
+ ---------------Common Styles for all Sections--------------  */
 body {
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
@@ -13,10 +9,11 @@ body {
 }
 
 .btn-color {
-    color: var(--btn-bg-color);
+    color: #E02C6D;
 }
 
-/* header Starts Here */
+/*---------------------------------------------
+ -----------header Starts Here--------------- */
 #mobile-menu {
     font-size: 40px;
     display: none;
@@ -30,10 +27,8 @@ body {
     color: var(--text-primary-color);
 }
 
-
-
-
 nav {
+
     display: flex;
     justify-content: space-around;
 
@@ -60,7 +55,7 @@ nav h2 {
     text-decoration: none;
     color: #3A3A3A;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.3em;
 
 }
 
@@ -78,6 +73,9 @@ nav h2 {
 
 }
 
+.section1 p {
+    font-size: 1.2em;
+}
 
 .info {
     width: 40%;
@@ -85,8 +83,8 @@ nav h2 {
 }
 
 .prebook_btn {
-    background-color: var(--btn-bg-color);
-    color: var(--btn-color);
+    background-color: #E02C6D;
+    color: #FFFFFF;
     height: 44px;
     width: 196px;
     font-weight: 700;
@@ -94,7 +92,13 @@ nav h2 {
     box-shadow: 2px 3px 5px plum;
     border: none;
     cursor: pointer;
+    margin-top: 2em;
 
+}
+
+.prebook_btn:hover {
+    box-shadow: 3px 3px 15px black;
+    transform: scale(1.2);
 }
 
 .info-img-bg {
@@ -103,7 +107,12 @@ nav h2 {
     box-sizing: border-box;
 }
 
-.info-images img {}
+.info-images:hover img {
+    transform: rotate(45deg);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+
+}
 
 /* -----------------------------section 2 Starts Here
 ---------------------------------------------------- */
@@ -137,24 +146,6 @@ nav h2 {
     justify-content: space-around;
 }
 
-/* .ecommerce-sites {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    margin-bottom: 3em;
-    border: 2px double ghostwhite;
-    border-left: none;
-    border-right: none;
-    padding: 20px 0;
-}
-
-.ecommerce-sites object {
-    margin-right: 1em;
-    display: flex;
-} */
-
-
-
-
 /*-------------------------------------------------------------
  -----------------------Card Section Starts Here / Section3 ----------*/
 .section3 {
@@ -185,8 +176,17 @@ span {
     color: gray;
 }
 
+.card :hover .card-img {
+    opacity: .7;
+    transition: opacity 1s ease-out;
+}
+
+.card-img {
+    margin-top: .5em;
+}
+
 .card i {
-    color: var(--btn-bg-color);
+    color: orange;
 }
 
 .card {
@@ -198,6 +198,8 @@ span {
     border-radius: 10px;
 
 }
+
+
 
 .card-contents {
     margin-left: 16px;
@@ -229,13 +231,21 @@ span {
     border-radius: 10px;
     font-weight: 700;
     font-size: 1.1em;
+    border: 4px solid #E02C6DDE;
+
+
+}
+
+#search-input:focus {
+    border: 4px solid orange;
+
 }
 
 #search-btn {
     height: 40px;
     width: 60px;
-    color: var(--btn-color);
-    background-color: var(--btn-bg-color);
+    color: #FFFFFF;
+    background-color: #E02C6DDE;
     font-weight: 700;
     font-size: 20px;
     border-radius: 10px;
@@ -269,11 +279,12 @@ span {
 }
 
 
-/* footer style starts here */
+/* -----------------------------------------------
+----------------footer style starts here---------- */
 footer {
     width: 100%;
     text-align: center;
-    background-color: rgb(5, 5, 17);
+    background-color: rgb(6, 6, 58);
     color: white;
     line-height: .6em;
     margin-top: 4em;
@@ -284,15 +295,11 @@ footer a i {
     font-size: 1.7em;
     color: white;
     margin-right: 1em;
-
-
 }
 
 /*-----------------------------------------------------------
  ---------------------media Query Starts Here ----------------*/
 @media only screen and (max-width:688px) {
-
-
     .menu-items {
         display: none;
     }
@@ -356,19 +363,14 @@ footer a i {
 
     .ecommerce-sites {
         flex-direction: column;
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr); */
+
     }
-
-
 
     .section3 {
         width: 90%;
         margin-left: 10%;
 
     }
-
-
 
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -402,8 +404,6 @@ footer a i {
 
 /* tablet devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
-
-
     .menu-items {
         display: none;
     }
@@ -421,7 +421,6 @@ footer a i {
         position: absolute;
         top: .4em;
         right: .2em;
-
     }
 
     .section1 {
@@ -435,10 +434,6 @@ footer a i {
         width: 80%;
         margin-bottom: 100px;
         order: 2;
-
-
-
-
     }
 
     .info-images {
@@ -462,30 +457,16 @@ footer a i {
         width: 70%;
     }
 
-
     .ecommerce-sites {
         flex-direction: column;
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr); */
+
     }
-
-
-    /* .ecommerce-sites {
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 30px;
-        text-align: center;
-    } */
-
-
 
     .section3 {
         width: 90%;
         margin-left: 10%;
 
     }
-
-
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
